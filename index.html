@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                Roboto: "'Roboto', sans-serif",
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="font-Roboto">
+    <!-- wrapper -->
+    <div class="lg:max-w-[1440px] lg:mx-auto">
+        <!-- nav -->
+        <div class="flex justify-between px-4 py-4 items-center md:flex-col md:justify-center md:gap-5 md:py-5">
+            <div>
+                <img class="w-[50%] object-cover md:w-auto" src="./imgs/logo.png" alt="">
+            </div>
+            <ul id="menu" class="invisible flex flex-col z-20 fixed items-center justify-center w-full h-screen bg-gray-500 top-0 left-0 gap-4 md:w-auto md:h-auto md:visible md:bg-white md:justify-between md:static md:flex-row lg:gap-8">
+                <li><a class="text-[12px] font-bold leading-[14px] hover:text-red-600 lg:text-[20px] lg:leading-[23px]" href="#">Game</a></li>
+                <li><a class="text-[12px] font-bold leading-[14px] hover:text-red-600 lg:text-[20px] lg:leading-[23px]" href="#">Champions</a></li>
+                <li><a class="text-[12px] font-bold leading-[14px] hover:text-red-600 lg:text-[20px] lg:leading-[23px]" href="#">News</a></li>
+                <li><a class="text-[12px] font-bold leading-[14px] hover:text-red-600 lg:text-[20px] lg:leading-[23px]" href="#">Patch Notes</a></li>
+                <li><a class="text-[12px] font-bold leading-[14px] hover:text-red-600 lg:text-[20px] lg:leading-[23px]" href="#">Discover</a></li>
+                <li><a class="text-[12px] font-bold leading-[14px] hover:text-red-600 lg:text-[20px] lg:leading-[23px]" href="#">Esports</a></li>
+                <li><a class="text-[12px] font-bold leading-[14px] hover:text-red-600 lg:text-[20px] lg:leading-[23px]" href="#">Universe</a></li>
+            </ul>
+            <div id="menu-btn" class="z-20 md:hidden">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <!-- banner1 -->
+        <div class="px-4 md:px-5 lg:px-0">
+            <img class="w-full object-cover" src="./imgs/banner1.jpg" alt="">
+        </div>
+        <!-- main -->
+        <div class="my-8 px-4 md:px-5 md:mt-10 md:mb-[118px] lg:px-4 lg:my-[64px]">
+            <!-- title -->
+            <div class="flex flex-col items-center gap-2 md:gap-3 lg:gap-4">
+                <a href="#">
+                    <h2 class="text-[24px] font-bold leading-[28px] md:text-[32px] md:leading-[37px] lg:text-[48px] lg:leading-[56px]">FIORA</h2>
+                </a>
+                <p class="text-[12px] font-bold leading-[14px] md:text-[20px] md:leading-[23px]">The most feared duelist in all Valoran</p>
+            </div>
+            <!-- content -->
+            <div class="mt-5 mb-8 grid grid-cols-1 gap-5 md:my-8 md:grid-cols-2 md:gap-x-[22px] md:gap-y-8 lg:mt-8 lg:mb-[64px] lg:grid-cols-4 lg:gap-8">
+                <div>
+                    <a href="#">
+                        <img class="w-full object-cover" src="./imgs/item1.jpg" alt="">
+                    </a>
+                    <div>
+                        <a href="#">
+                            <h3 class="text-[14px] font-bold leading-[16px] mt-[15px] mb-2 md:text-[16px] md:leading-[18px] md:mt-5 md:mb-2 lg:text-[20px] lg:leading-[23px] lg:mb-3">LUNGE</h3>
+                        </a>
+                        <p class="text-[#848484] text-[12px] font-[400] leading-[18px] md:text-[14px] md:leading-[20px] lg:text-[20px] lg:leading-[30px]">Fiora lunges in a direction and stabs a nearby enemy, dealing physical damage and applying on-hit effects.</p>
+                    </div>
+                </div>
+                <div>
+                    <a href="#">
+                        <img class="w-full object-cover" src="./imgs/item2.jpg" alt="">
+                    </a>
+                    <div>
+                        <a href="#">
+                            <h3 class="text-[14px] font-bold leading-[16px] mt-[15px] mb-2 md:text-[16px] md:leading-[18px] md:mt-5 md:mb-2 lg:text-[20px] lg:leading-[23px] lg:mb-3">RIPOSTE</h3>
+                        </a>
+                        <p class="text-[#848484] text-[12px] font-[400] leading-[18px] md:text-[14px] md:leading-[20px] lg:text-[20px] lg:leading-[30px]">Fiora parries all incoming damage and disables for a short time, then stabs in a direction. This stab slows the first enemy champion hit, or stuns them if Fiora blocked an immobilizing effect with this ability.</p>
+                    </div>
+                </div>
+                <div>
+                    <a href="#">
+                        <img class="w-full object-cover" src="./imgs/item3.jpg" alt="">
+                    </a>
+                    <div>
+                        <a href="#">
+                            <h3 class="text-[14px] font-bold leading-[16px] mt-[15px] mb-2 md:text-[16px] md:leading-[18px] md:mt-5 md:mb-2 lg:text-[20px] lg:leading-[23px] lg:mb-3">GRAND CHALLENGE</h3>
+                        </a>
+                        <p class="text-[#848484] text-[12px] font-[400] leading-[18px] md:text-[14px] md:leading-[20px] lg:text-[20px] lg:leading-[30px]">Fiora reveals all four Vitals on an enemy champion and gains Move Speed while near them. If Fiora hits all 4 Vitals or if the target dies after she has hit at least one, Fiora and her allies in the area are healed over the next few seconds.</p>
+                    </div>
+                </div>
+                <div>
+                    <a href="#">
+                        <img class="w-full object-cover" src="./imgs/item4.jpg" alt="">
+                    </a>
+                    <div>
+                        <a href="#">
+                            <h3 class="text-[14px] font-bold leading-[16px] mt-[15px] mb-2 md:text-[16px] md:leading-[18px] md:mt-5 md:mb-2 lg:text-[20px] lg:leading-[23px] lg:mb-3">BLADEWORK</h3>
+                        </a>
+                        <p class="text-[#848484] text-[12px] font-[400] leading-[18px] md:text-[14px] md:leading-[20px] lg:text-[20px] lg:leading-[30px]">Fiora has increased attack speed for the next two attacks. The first attack slows the target, and the second attack will critically strike.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- banner2 -->
+            <div>
+                <img class="w-full object-cover" src="./imgs/banner2.jpg" alt="">
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="bg-black flex items-center justify-between px-4 py-8 mx-4 md:px-5 md:mx-5 lg:mx-0 lg:px-4 lg:py-6">
+            <div>
+                <img class="w-[50%] md:w-auto" src="./imgs/logo.png" alt="">
+            </div>
+            <form id="form" action="">
+                <input id="email" class="border-2 border-[#FFB800] text-white bg-black pl-2 w-[120px] h-[30px] placeholder:text-white placeholder:text-[12px] placeholder:font-bold placeholder:leading-[14px] outline-none md:pl-3 md:w-[250px] md:h-[40px] md:placeholder:text-[14px] md:placeholder:leading-[16px] lg:pl-5 lg:placeholder:text-[20px] lg:placeholder:leading-[23px] lg:w-[350px] lg:h-[50px]" type="text" placeholder="Email">
+                <button class="border-none ml-2 bg-[#FFB800] text-white text-[12px] font-bold leading-[14px] w-[60px] h-[30px] ml-3 md:text-[14px] md:leading-[16px] md:h-[40px] md:w-[100px] lg:ml-5 lg:text-[20px] lg:leading-[23px] lg:w-[120px] lg:h-[50px]" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
